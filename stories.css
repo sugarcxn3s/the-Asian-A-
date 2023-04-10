@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Asap", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #00a6a6;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #42455a;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #00a6a6;
+}
+
+header nav a {
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: #e7ecef;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+header nav a:hover, header nav a.active {
+    background: #00a6a6;
+    color: #42455a;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+}
+
+body {
+    background: #42455a;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stories {
+    background: #42455a;
+    color: #e7ecef;
+}
+
+section .container {
+    margin: 100px;
+}
+
+section h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .text-container {
+    display: flex;
+}
+
+section .text-container .text-box {
+    margin: 20px;
+    padding: 20px;
+    position: center;
+}
+
+section .text-container .text-box h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+section .text-container .text-box p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    text-indent: 5%;
+}
+
+section .text-container .text-box iframe {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    text-indent: 5%;
+}
+
+#p-form {
+    font-size: 18px;
+    text-align: center;
+}
+
+form .form-group {
+    font-size: 18px;
+    line-height: 2;
+}
+
+input {
+    font-size: 18px;
+}
+
+textarea {
+    text-align: center;
+}
+
+#share {
+    font-size: 16px;
+    text-indent: 5%;
+    padding-top: 3%;
+}
+
+button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;    
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+    section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    section .text-container {
+        flex-direction: column;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+    text-align: center;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
