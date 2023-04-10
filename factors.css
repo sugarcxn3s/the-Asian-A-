@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Asap", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #42455a;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #00a6a6;
+}
+
+header nav a {
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: #e7ecef;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+header nav a:hover, header nav a.active {
+    background: #00a6a6;
+    color: #42455a;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+}
+
+body {
+    background: #e7ecef;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#factors {
+  color: #42455a;
+  background: #e7ecef;
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-right: 80px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+li{
+  margin-left: 30px;
+  line-height: 1.5;
+}
+
+h2, h3{
+  color: #00a6a6;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+    text-align: left;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
